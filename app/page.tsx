@@ -1,65 +1,292 @@
-import Image from "next/image";
+"use client";
+
+import styles from "../app/home.module.css";
+
+import { useRef } from "react";
+
+import CountdownTimer from "../components/timer";
+import Typewriter from "../components/typewriter";
 
 export default function Home() {
+  const lastSectionRef = useRef<HTMLButtonElement | null>(null);
+
+  const scrollToLast = () => {
+    lastSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      <div className="container">
+        <div className={styles.heroInner}>
+          <div className={styles.heroTitles}>
+            <h1 className={styles.heroTitle}>
+              Коли їжа — це емоції
+            </h1>
+
+            <h2 className={styles.heroSubtitle}>
+              Ви не переїдаєте через слабку силу волі
+            </h2>
+
+            <h2 className={styles.heroSubtitle2}>
+              Ви просто не вмієте по-іншому справлятись з емоціями
+            </h2>
+          </div>
+
+          <div className={styles.heroTimer}>
+            <CountdownTimer />
+          </div>
+
+          <div className={styles.heroPrice}>
+            <span className={styles.heroOldPrice}>
+              2490 грн
+            </span>
+            <span className={styles.heroNewPrice}>
+              490 грн
+            </span>
+          </div>
+
+          <div className={styles.heroCta}>
+            <button
+              className={styles.heroButton}
+              onClick={scrollToLast}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              Отримати міні-курc
+            </button>
+          </div> 
+
+          <div className={styles.heroPhotoWrap}>
+            <img src="/IMG_3196.png" alt="photo" className={styles.heroPhoto} />
+          </div>
+        </div>
+
+        <div className={styles.helpToKnowContainer}>
+          <div className={styles.helpToKnowLeft}>
+            <div className={styles.helpToKnowTitle}>
+              Міні-курс, який допоможе зрозуміти:
+            </div>
+
+            <div className={styles.helpToKnowTypewriter}>
+              <Typewriter />
+            </div>
+          </div>
+
+          <div className={styles.helpToKnowRight}>
+            <div className={styles.helpToKnowItem}>
+              5 коротких уроків
+            </div>
+
+            <div className={styles.helpToKnowItem2}>
+              доступ одразу після оплати
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.sectionWrapper}>
+          <p className={styles.sectionIntro}>Ви точно знаєте це відчуття</p>
+          <h2 className={styles.sectionTitle}>Якщо хоч один пункт — про вас, ця сторінка для вас</h2>
+
+          <div className={styles.symptomsGrid}>
+            <div className={styles.symptomCard}>
+              <div className={styles.symptomDot}></div>
+              <span className={styles.symptomText}>Їсте, навіть коли вже наїлись</span>
+            </div>
+            <div className={styles.symptomCard}>
+              <div className={styles.symptomDot}></div>
+              <span className={styles.symptomText}>Не можете зупинитися на солодкому</span>
+            </div>
+            <div className={styles.symptomCard}>
+              <div className={styles.symptomDot}></div>
+              <span className={styles.symptomText}>«Зриваєтесь», навіть якщо тримались</span>
+            </div>
+            <div className={styles.symptomCard}>
+              <div className={styles.symptomDot}></div>
+              <span className={styles.symptomText}>Постійно думаєте про їжу</span>
+            </div>
+            <div className={styles.symptomCard}>
+              <div className={styles.symptomDot}></div>
+              <span className={styles.symptomText}>Після їжі відчуваєте провину</span>
+            </div>
+            <div className={styles.symptomCard}>
+              <div className={styles.symptomDot}></div>
+              <span className={styles.symptomText}>Намагаєтесь контролювати себе — але не виходить</span>
+            </div>
+          </div>
+          </div> 
+
+          <div className={styles.cycleBanner}>
+            <div className={styles.cycleTitle}>
+              І кожен раз одне й те саме:
+            </div>
+
+            <div className={styles.cycleBannerWrapper}>
+              <span className={styles.cycleStep}>
+                обіцяєте почати заново
+              </span>
+
+              <span className={styles.cycleArrow}>→</span>
+
+              <span className={styles.cycleStep}>
+                тримаєтесь
+              </span>
+
+              <span className={styles.cycleArrow}>→</span>
+
+              <span className={styles.cycleStep}>
+                зриваєтесь
+              </span>
+
+              <span className={styles.cycleArrow}>→</span>
+
+              <span className={styles.cycleStep}>
+                ненавидите себе ще більше
+              </span>
+            </div>
+          </div>
+
+          <div className={styles.spoilerSection}>
+            <span className={styles.spoilerLabel}>Спойлер</span>
+            <p className={styles.spoilerTitle}>Справа не в силі волі</p>
+            <p className={styles.spoilerSub}>Вам здається, що проблема — в їжі. Але їжа тут ні до чого.</p>
+
+            <hr className={styles.spRule}/>
+ 
+            <div className={styles.spPair}>
+              <p>Ви не переїдаєте через голод</p>
+              <p>Ви їсте, щоб впоратись зі станом</p>
+            </div>
+        
+            <p className={styles.spPrefixTitle}>Їжа стає способом</p>
+            <p className={styles.spPrefix}>заспокоїтись</p>
+            <p className={styles.spPrefix}>відволіктись</p>
+            <p className={styles.spPrefix}>не відчувати</p>
+            <p className={styles.spPrefix}>заповнити пустоту</p>
+        
+            <p className={styles.spFooter}>
+              І поки їжа виконує цю функцію —<br/>
+              ви не зможете просто «перестати»
+            </p>
+          </div>
+
+          <div className={styles.heroCta}>
+            <button
+              className={styles.heroButton}
+              onClick={scrollToLast}
             >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              Отримати міні-курc
+            </button>
+          </div>
+      </div>
+
+      <div className={styles.willLearn}>
+        <div className="container">
+          <div className={styles.willLearnContainer}>
+            <p className={styles.willLearnContainerTitle}>Цей міні-курс дасть вам розуміння:</p>
+
+            <ul className={styles.willLearnContainerList}>
+              <li>Чому ви їсте без фізичного голоду</li>
+              <li>Чому не чуєте сигнали тіла</li>
+              <li>Як працює імпульс “піти і поїсти”</li>
+              <li>Що стоїть за переїданням</li>
+              <li>Як почати змінювати це без жорсткого контролю</li>
+            </ul>
+
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </div>
+
+      <div className="container">
+        <div className={styles.program}>
+          <p className={styles.programTitle}>Програма курсу</p>
+      
+          <div className={styles.programGrid}>
+            <div className={styles.programCard}>
+              <div className={styles.programNum}>Урок 1</div>
+              <div className={styles.programCardTitle}>Чому ви їсте, навіть коли вже наїлись</div>
+              <div className={styles.programCardSub}>Розберемо, що насправді стоїть за переїданням</div>
+            </div>
+            <div className={styles.programCard}>
+              <div className={styles.programNum}>Урок 2</div>
+              <div className={styles.programCardTitle}>Чому ви не чуєте своє тіло</div>
+              <div className={styles.programCardSub}>Чому ви втратили контакт із собою і як його повернути</div>
+            </div>
+            <div className={styles.programCard}>
+              <div className={styles.programNum}>Урок 3</div>
+              <div className={styles.programCardTitle}>Що робити з імпульсом «піти і поїсти»</div>
+              <div className={styles.programCardSub}>Як працює імпульс і як його проживати</div>
+            </div>
+            <div className={styles.programCard}>
+              <div className={styles.programNum}>Урок 4</div>
+              <div className={styles.programCardTitle}>Що робити, щоб не заїдати емоції</div>
+              <div className={styles.programCardSub}>Альтернатива їжі як способу справлятись</div>
+            </div>
+            <div className={`${styles.programCard} ${styles.programCardFull}`}>
+              <div className={styles.programNum}>Урок 5</div>
+              <div className={styles.programCardTitle}>Як закріпити зміни</div>
+              <div className={styles.programCardSub}>Чому зриви — це частина процесу і як реально змінити поведінку</div>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+
+        <div className={styles.aboutMe}>
+          <div className={styles.aboutMeLabel}>
+            Про спікера
+          </div>
+          <div className={styles.aboutMeContainer}>
+            <div className={styles.aboutMeName}>
+              Я — Анастасія Чередник, психолог.
+            </div>
+
+            <div className={styles.aboutMeText}>
+              Працюю з темою розладів харчової поведінки та допомагаю людям відновлювати здорові стосунки з їжею і тілом.
+            </div>
+
+            <div className={styles.aboutMeText}>
+              У своїй практиці я бачу одну й ту саму історію: люди роками намагаються “взяти себе в руки”, але тільки сильніше заганяють себе у цикл: контроль → зрив → провина
+            </div>
+
+            <div className={styles.aboutMeHighlight}>
+              І саме з цього кола ми будемо виходити
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.courseBlock}>
+          <div className={styles.courseSection}>
+            <div className={styles.courseTitle}>
+              Цей курс для вас, якщо:
+            </div>
+
+            <div className={styles.courseText}>
+              Ви “вічно худнете”, але не худнете<br />
+              Не можете зупинитися в їжі<br />
+              Заїдаєте емоції<br />
+              Відчуваєте втрату контролю<br />
+              Хочете перестати жити в постійній боротьбі з собою
+            </div>
+          </div>
+
+          <div className={styles.courseSection}>
+            <div className={styles.courseTitle}>
+              Після курсу ви:
+            </div>
+
+            <div className={styles.courseText}>
+              Зрозумієте, чому це з вами відбувається<br />
+              Перестанете звинувачувати себе<br />
+              Побачите, де запускається переїдання<br />
+              Отримаєте перші інструменти змін
+            </div>
+          </div>
+        </div>
+        <div className={styles.heroCta}>
+            <button
+              className={styles.heroButton}
+              onClick={scrollToLast}
+            >
+              Отримати міні-курc
+            </button>
+          </div> 
+      </div> 
+    </>
   );
 }
