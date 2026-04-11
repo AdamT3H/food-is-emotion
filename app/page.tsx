@@ -156,10 +156,15 @@ export default function Home() {
             </div>
         
             <p className={styles.spPrefixTitle}>Їжа стає способом</p>
-            <p className={styles.spPrefix}>заспокоїтись</p>
-            <p className={styles.spPrefix}>відволіктись</p>
-            <p className={styles.spPrefix}>не відчувати</p>
-            <p className={styles.spPrefix}>заповнити пустоту</p>
+            <div className={styles.spLine}>
+              <span className={styles.spPrefix}>заспокоїтись</span>
+              <span className={styles.spArrow}>→</span>
+              <span className={styles.spPrefix}>відволіктись</span>
+              <span className={styles.spArrow}>→</span>
+              <span className={styles.spPrefix}>не відчувати</span>
+              <span className={styles.spArrow}>→</span>
+              <span className={styles.spPrefix}>заповнити пустоту</span>
+            </div>
         
             <p className={styles.spFooter}>
               І поки їжа виконує цю функцію —<br/>
