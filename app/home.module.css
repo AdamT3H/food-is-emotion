@@ -393,6 +393,20 @@
   border-radius: 20px;
 }
 
+.photoWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.photo1 {
+  width: 320px;
+  height: auto;
+  display: block;
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 85%);
+  mask-image: linear-gradient(to bottom, black 0%, black 50%, transparent 85%);
+}
+
 .willLearnContainer{
   max-width: 1200px;
   display: flex;
@@ -417,7 +431,7 @@
 }
 
 .program {
-  padding: 72px 24px 80px;
+  padding: 72px 24px 20px;
   max-width: 1000px;
   margin: 0 auto;
   margin-top: 50px;
@@ -477,7 +491,7 @@
 
 .aboutMe {
   max-width: 900px;
-  margin: 50px auto;
+  margin: 20px auto;
   padding: 40px 24px;
   display: flex;
   flex-direction: column;
@@ -710,7 +724,7 @@
   }
 
   .program {
-    padding: 0px 12px 80px;
+    padding: 0px 12px 20px;
     max-width: 1000px;
     margin: 0 auto;
     margin-top: 60px;
@@ -735,7 +749,7 @@
   .aboutMe {
     max-width: 900px;
     margin: 0px auto;
-    padding: 20px 24px;
+    padding: 0px 24px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -232,6 +232,10 @@ export default function Home() {
           </div>
         </div>
 
+        <div className={styles.photoWrapper}>
+          <img src="/IMG_2221.png" className={styles.photo1} />
+        </div>
+
         <div className={styles.aboutMe}>
           <div className={styles.aboutMeLabel}>
             Про спікера
