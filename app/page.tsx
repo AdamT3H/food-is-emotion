@@ -233,6 +233,63 @@ export default function Home() {
           <img src="/IMG_3200.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon4}`} />
         </div>
 
+        <div className={styles.plansSection}>
+          <p className={styles.plansTitle}>Оберіть формат, з яким ви реально зможете вийти з цього кола</p>
+
+          <div className={styles.plansGrid}>
+
+            <div className={styles.planCard}>
+              <div className={styles.planName}>Базовий</div>
+              <div className={styles.planDesc}>Доступ до міні-курсу «Коли їжа — це емоції»</div>
+
+              <ul className={styles.planList}>
+                <li>4 уроки із поясненням причин переїдання</li>
+                <li>розуміння, як працює імпульс</li>
+                <li>перші інструменти для змін</li>
+              </ul>
+
+              <div className={styles.planHint}>Підійде, якщо хочете розібратись самостійно</div>
+
+              <div className={styles.planPrice}>
+                <div className={styles.heroPrice}>
+                  <span className={styles.heroOldPrice}>1599 грн</span>
+                  <span className={styles.heroNewPrice}>199 грн</span>
+                </div>
+                
+                <button className={styles.heroButton}>Отримати доступ</button>
+              </div>
+            </div>
+
+            <div className={`${styles.planCard} ${styles.planCardFeatured}`}>
+              <div className={styles.planBadge}>Рекомендовано</div>
+              <div className={styles.planName}>З підтримкою</div>
+              <div className={styles.planDesc}>Доступ до курсу + підтримка в чаті 5 тижнів</div>
+
+              <ul className={styles.planList2}>
+                <li>повний доступ до курсу</li>
+                <li>5 тижнів підтримки в чаті</li>
+                <li>відповіді на ваші питання</li>
+                <li>допомога в моменти зривів</li>
+                <li>розбір ваших ситуацій</li>
+              </ul>
+
+              <div className={styles.planHint}>Ви не залишаєтесь самі в момент, коли хочеться повернутись до старої поведінки</div>
+              <div className={styles.planHighlight}>І саме це дає результат, а не просто знання</div>
+
+              <div className={styles.planPrice2}>
+                <div className={styles.heroPrice}>
+                  <span className={styles.heroOldPrice}>2999 грн</span>
+                  <span className={styles.heroNewPrice}>999 грн</span>
+                </div>
+
+                <button className={styles.heroButton}>Отримати доступ</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        
+
         <div className={styles.photoWrapper}>
           <img src="/IMG_2221.png" className={styles.photo1} />
         </div>
