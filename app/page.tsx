@@ -6,6 +6,7 @@ import { useRef } from "react";
 
 import CountdownTimer from "../components/timer";
 import Typewriter from "../components/typewriter";
+import FallingFood from "../components/FallingFood";
 
 export default function Home() {
   const lastSectionRef = useRef<HTMLButtonElement | null>(null);
@@ -16,7 +17,9 @@ export default function Home() {
 
   return (
     <>
+      <FallingFood />
       <div className="container">
+
         <div className={styles.heroInner}>
           <div className={styles.heroTitles}>
             <h1 className={styles.heroTitle}>
@@ -34,7 +37,6 @@ export default function Home() {
 
           <div className={styles.heroTimer}>
             <CountdownTimer />
-            <img src="/IMG_3197.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon1}`} />
           </div>
 
           <div className={styles.heroPrice}>
@@ -66,8 +68,6 @@ export default function Home() {
               Міні-курс, який допоможе зрозуміти:
             </div>
 
-            <img src="/IMG_3198.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon2}`} />
-
             <div className={styles.helpToKnowTypewriter}>
               <Typewriter />
             </div>
@@ -75,7 +75,7 @@ export default function Home() {
 
           <div className={styles.helpToKnowRight}>
             <div className={styles.helpToKnowItem}>
-              5 коротких уроків
+              4 коротких урока
             </div>
 
             <div className={styles.helpToKnowItem2}>
@@ -156,7 +156,6 @@ export default function Home() {
             <div className={styles.spPair}>
               <p>Ви не переїдаєте через голод</p>
               <p>Ви їсте, щоб впоратись зі станом</p>
-              <img src="/IMG_3199.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon3}`} />
             </div>
         
             <p className={styles.spPrefixTitle}>Їжа стає способом</p>
@@ -229,8 +228,6 @@ export default function Home() {
               <div className={styles.programCardSub}>Альтернатива їжі як способу справлятись</div>
             </div>
           </div>
-
-          <img src="/IMG_3200.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon4}`} />
         </div>
 
         <div className={styles.plansSection}>
@@ -319,7 +316,6 @@ export default function Home() {
 
         <div className={styles.courseBlock}>
           <div className={styles.courseSection}>
-            <img src="/IMG_3201.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon5}`} />
 
             <div className={styles.courseTitle}>
               Цей курс для вас, якщо:

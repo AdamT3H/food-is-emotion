@@ -1,0 +1,21 @@
+/* FallingFood.module.css */
+.wrapper {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: -10;
+  }
+  
+  .item {
+    position: absolute;
+    top: -80px;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    0%   { transform: translateY(0) rotate(0deg);   opacity: 0; }
+    5%   { opacity: var(--food-opacity, 0.15); }
+    90%  { opacity: var(--food-opacity, 0.15); }
+    100% { transform: translateY(110vh) rotate(360deg); opacity: 0; }
+  }
