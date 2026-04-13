@@ -34,14 +34,15 @@ export default function Home() {
 
           <div className={styles.heroTimer}>
             <CountdownTimer />
+            <img src="/IMG_3197.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon1}`} />
           </div>
 
           <div className={styles.heroPrice}>
             <span className={styles.heroOldPrice}>
-              2490 грн
+              1599 грн
             </span>
             <span className={styles.heroNewPrice}>
-              490 грн
+              199 грн
             </span>
           </div>
 
@@ -64,6 +65,8 @@ export default function Home() {
             <div className={styles.helpToKnowTitle}>
               Міні-курс, який допоможе зрозуміти:
             </div>
+
+            <img src="/IMG_3198.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon2}`} />
 
             <div className={styles.helpToKnowTypewriter}>
               <Typewriter />
@@ -153,6 +156,7 @@ export default function Home() {
             <div className={styles.spPair}>
               <p>Ви не переїдаєте через голод</p>
               <p>Ви їсте, щоб впоратись зі станом</p>
+              <img src="/IMG_3199.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon3}`} />
             </div>
         
             <p className={styles.spPrefixTitle}>Їжа стає способом</p>
@@ -224,12 +228,9 @@ export default function Home() {
               <div className={styles.programCardTitle}>Що робити, щоб не заїдати емоції</div>
               <div className={styles.programCardSub}>Альтернатива їжі як способу справлятись</div>
             </div>
-            <div className={`${styles.programCard} ${styles.programCardFull}`}>
-              <div className={styles.programNum}>Урок 5</div>
-              <div className={styles.programCardTitle}>Як закріпити зміни</div>
-              <div className={styles.programCardSub}>Чому зриви — це частина процесу і як реально змінити поведінку</div>
-            </div>
           </div>
+
+          <img src="/IMG_3200.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon4}`} />
         </div>
 
         <div className={styles.photoWrapper}>
@@ -242,7 +243,7 @@ export default function Home() {
           </div>
           <div className={styles.aboutMeContainer}>
             <div className={styles.aboutMeName}>
-              Я — Анастасія Чередник, психолог.
+              Я — Анастасія Чередник, психолог
             </div>
 
             <div className={styles.aboutMeText}>
@@ -261,6 +262,8 @@ export default function Home() {
 
         <div className={styles.courseBlock}>
           <div className={styles.courseSection}>
+            <img src="/IMG_3201.PNG" className={`${styles.pizzaIcon} ${styles.pizzaIcon5}`} />
+
             <div className={styles.courseTitle}>
               Цей курс для вас, якщо:
             </div>
