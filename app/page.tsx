@@ -9,7 +9,7 @@ import Typewriter from "../components/typewriter";
 import FallingFood from "../components/FallingFood";
 
 export default function Home() {
-  const lastSectionRef = useRef<HTMLButtonElement | null>(null);
+  const lastSectionRef = useRef<HTMLDivElement | null>(null);
 
   const scrollToLast = () => {
     lastSectionRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -235,7 +235,10 @@ export default function Home() {
 
           <div className={styles.plansGrid}>
 
-            <div className={styles.planCard}>
+            <div 
+              className={styles.planCard} 
+              ref={lastSectionRef}
+            >
               <div className={styles.planName}>Базовий</div>
               <div className={styles.planDesc}>Доступ до міні-курсу «Коли їжа — це емоції»</div>
 
@@ -253,7 +256,12 @@ export default function Home() {
                   <span className={styles.heroNewPrice}>199 грн</span>
                 </div>
                 
-                <button className={styles.heroButton}>Отримати доступ</button>
+                <button 
+                  className={styles.heroButton}
+                  onClick={() => window.location.href = "https://secure.wayforpay.com/button/b60507311393a"}
+                >
+                  Отримати доступ
+                </button>
               </div>
             </div>
 
@@ -279,7 +287,12 @@ export default function Home() {
                   <span className={styles.heroNewPrice}>999 грн</span>
                 </div>
 
-                <button className={styles.heroButton}>Отримати доступ</button>
+                <button 
+                  className={styles.heroButton}
+                  onClick={() => window.location.href = "https://secure.wayforpay.com/button/b098c1d964971"}
+                >
+                  Отримати доступ
+                </button>
               </div>
             </div>
 
