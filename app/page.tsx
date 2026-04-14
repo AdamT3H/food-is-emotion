@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <>
-      <FallingFood />
+      {/* <FallingFood /> */}
       <div className="container">
 
         <div className={styles.heroInner}>
