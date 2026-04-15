@@ -24,8 +24,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <Script id="fb-pixel" strategy="afterInteractive">
+      <body
+        className={`${vollkorn.variable} ${montserrat.variable} antialiased`}
+      >
+        <Script id="facebook-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -35,22 +37,17 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            
-            fbq('init', '1484137870010172');
+            fbq('init', '26749232414714010');
             fbq('track', 'PageView');
           `}
         </Script>
-      </head>
 
-      <body
-        className={`${vollkorn.variable} ${montserrat.variable} antialiased`}
-      >
         <noscript>
-          <img
-            height="1"
-            width="1"
-            style={{ display: "none" }}
-src="https://www.facebook.com/tr?id=1484137870010172&ev=PageView&noscript=1"
+          <img 
+            height="1" 
+            width="1" 
+            style={{display:"none"}}
+            src="https://www.facebook.com/tr?id=26749232414714010&ev=PageView&noscript=1"
           />
         </noscript>
 
