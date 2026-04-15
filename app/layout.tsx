@@ -19,20 +19,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${vollkorn.variable} ${montserrat.variable} antialiased`}
-      >
-        {children}
-
-        <Script
-          id="meta-pixel"
-          strategy="afterInteractive"
-        >
+      <head>
+        {/* Meta Pixel */}
+        <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
             {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -42,11 +36,17 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
+            
             fbq('init', '1484137870010172');
             fbq('track', 'PageView');
           `}
         </Script>
+      </head>
 
+      <body
+        className={`${vollkorn.variable} ${montserrat.variable} antialiased`}
+      >
+        {/* noscript fallback */}
         <noscript>
           <img
             height="1"
@@ -55,6 +55,8 @@ export default function RootLayout({
             src="https://www.facebook.com/tr?id=1484137870010172&ev=PageView&noscript=1"
           />
         </noscript>
+
+        {children}
       </body>
     </html>
   );
