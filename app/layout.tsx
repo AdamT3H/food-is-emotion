@@ -25,7 +25,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Meta Pixel */}
         <Script id="fb-pixel" strategy="afterInteractive">
           {`
             !function(f,b,e,v,n,t,s)
@@ -46,13 +45,12 @@ export default function RootLayout({
       <body
         className={`${vollkorn.variable} ${montserrat.variable} antialiased`}
       >
-        {/* noscript fallback */}
         <noscript>
           <img
             height="1"
             width="1"
             style={{ display: "none" }}
-            src="https://www.facebook.com/tr?id=1484137870010172&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1484137870010172&ev=PageView&noscript=1"
           />
         </noscript>
 
