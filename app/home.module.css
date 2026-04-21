@@ -43,7 +43,7 @@
   font-weight: 500;
   text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.214);
   text-align: center;
-  color: rgba(0, 0, 0, 0.631);
+
 }
 
 .heroPrice{
@@ -77,24 +77,24 @@
 }
 
 .heroButton {
-  background: #23140C;
-  box-shadow: 0px 0px 15px #23140C;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.184);
-  color: #d0ba98;
-  border: none;
-  padding: 18px 32px;
+  background: #8d9e73;
+  box-shadow:0 0 15px #8d9e73;
+  text-shadow: none;
+  color: #f0f2eb;
+  padding: 14px 42px;
   font-size: 24px;
   font-weight: 600;
-  border-radius: 25px;
+  border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
   text-transform: uppercase;
-  border: 4px solid #91040b6f;
   width: 100%;
+  letter-spacing: 0.08em;
 }
 
 .heroButton:hover {
-  transform: scale(1.05) translateY(-3px);
+  background: #8a9c6a;
+  transform: scale(1.02) translateY(-2px);
 }
 
 .helpToKnowContainer{
@@ -169,7 +169,7 @@
   font-weight: 500;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: #91040b;
+  color: #316a2a;
   margin-bottom: 12px;
 }
 
@@ -180,7 +180,6 @@
   line-height: 1.15;
   margin: 0 auto 56px;
   max-width: 560px;
-  color: #2a2925;
 }
 
 .symptomsGrid {
@@ -192,9 +191,9 @@
 }
 
 .symptomCard {
-  background: #DDcEB6;
+  background: #d1dbca;
   border: 0.5px solid rgba(42,41,37,0.13);
-  border-radius: 14px;
+  border-radius: 5px;
   padding: 20px 20px;
   display: flex;
   gap: 14px;
@@ -206,7 +205,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #91040b;
+  background: #2d5a1b;
   flex-shrink: 0;
 }
 
@@ -214,14 +213,14 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5;
-  color: #2a2925;
+
 }
 
 .cycleBanner {
   max-width: 900px;
   margin: 0 auto 64px;
-  background: #23140c;
-  border-radius: 18px;
+  background: #1a2e14;
+  border-radius: 5px;
   padding: 28px 36px;
   display: flex;
   align-items: center;
@@ -238,7 +237,7 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #d0ba98;
+  color: #d1dbca;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   white-space: nowrap;
@@ -248,7 +247,7 @@
 .cycleTitle {
   font-size: 16px;
   font-weight: 600;
-  color: #d0ba98;
+  color: #d1dbca;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   white-space: nowrap;
@@ -256,7 +255,7 @@
 }
 
 .cycleArrow {
-  color: #91040b;
+  color: #316a2a;
   font-size: 18px;
   margin: 0 10px;
   font-weight: 700;
@@ -264,7 +263,7 @@
 }
 
 .spArrow {
-  color: #91040b;
+  color: #316a2a;
   font-size: 18px;
   margin: 0 10px;
   font-weight: 700;
@@ -288,13 +287,13 @@
 
 .spoilerLabel {
   display: inline-block;
-  background: #fdecea;
-  color: #91040b;
+  background: #ebf2e3;
+  color: #316a2a;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  border-radius: 40px;
+  border-radius: 5px;
   padding: 5px 16px;
   margin-bottom: 20px;
 }
@@ -304,7 +303,7 @@
   font-weight: 800;
   line-height: 1.25;
   margin-bottom: 5px;
-  color: #2a2925;
+
 }
 
 .spoilerSub {
@@ -332,8 +331,7 @@
 .spPair p {
   font-size: 15px;
   line-height: 1.8;
-  margin: 0 0 6px;
-  color: #2a2925;
+  margin: 0 0 6px; 
 }
 
 .spPrefix {
@@ -341,7 +339,7 @@
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.1em;
-  color: rgba(42, 41, 37, 0.596);
+
   margin: 10px;
 }
 
@@ -351,7 +349,7 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(42, 41, 37, 0.854);
+
   margin: 0 0 14px;
 }
 
@@ -368,7 +366,7 @@
 
 .willLearn{
   width: 100%;
-  background-color: #d0ba985a;
+  background-color: #d1dbca5a;
   margin-top: 100px;
   padding: 70px 0px 60px 0px;
   display: flex;
@@ -380,7 +378,7 @@
   box-shadow: 0px 80px 100px rgba(35, 20, 12, 0.516);
   will-change: transform;
   transform: translateZ(0);
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .heroPhoto {
@@ -393,7 +391,7 @@
   margin: 0px auto -20px;
   -webkit-mask-image: linear-gradient(to top, black 55%, transparent 100%);
   mask-image: linear-gradient(to top, black 80%, transparent 100%);
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .photoWrapper {
@@ -448,7 +446,7 @@
   line-height: 1.15;
   margin: 0 auto 56px;
   max-width: 560px;
-  color: #2a2925;
+
 }
 
 .programGrid {
@@ -458,9 +456,9 @@
 }
 
 .programCard {
-  background: #DDcEB6;
+  background: #d1dbcae0;
   border: 0.5px solid rgba(42,41,37,0.13);
-  border-radius: 14px;
+  border-radius: 5px;
   padding: 15px 15px;
 }
 
@@ -478,7 +476,6 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 1.3;
-  color: #2a2925;
   margin-bottom: 8px;
 }
 
@@ -513,14 +510,14 @@
   text-align: center;
   line-height: 1.15;
   max-width: 560px;
-  color: #2a2925;
+
 }
 
 .aboutMeName {
   font-size: 24px;
   font-weight: 700;
   font-family: var(--font-vollkorn);
-  color: #2a2925;
+
   line-height: 1.2;
 }
 
@@ -534,7 +531,6 @@
 .aboutMeHighlight {
   font-size: 18px;
   font-weight: 600;
-  color: #2a2925;
   margin-top: 10px;
 }
 
@@ -559,16 +555,9 @@
   font-size: 28px;
   font-weight: 600;
   font-family: var(--font-vollkorn);
-  color: #20201f;
-
-
-  background: #43332B;
-  box-shadow: 0px 0px 15px #23140C;
-  color: #f1e8db;
-  border: none;
-  padding: 16px 28px;
-  border-radius: 25px;
-  border: 4px solid #91040b3f;
+  padding: 12px 28px;
+  border-radius: 5px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.435);
 }
 
 .courseText {
@@ -664,9 +653,9 @@
 }
 
 .planPrice2 .heroButton {
-  background: #d0ba98;
-  color: #23140C;
-  border: 4px solid #23140caf;
+  background: #d1dbca;
+  color: #1a2e14;
+  box-shadow: 0px 0px 15px #6f8568;
 }
 
 .plansTitle {
@@ -687,9 +676,9 @@
 }
 
 .planCard {
-  background: #DDcEB6;
+  background: #d1dbcae0;
   border: 0.5px solid rgba(42,41,37,0.13);
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 32px 28px;
   display: flex;
   flex-direction: column;
@@ -698,8 +687,8 @@
 }
 
 .planCardFeatured {
-  background: #23140c;
-  border: 4px solid #91040b6f;
+  background: #1a2e14;
+  border: 4px solid #2d5a1b;
   box-shadow: 0px 0px 30px rgba(35, 20, 12, 0.3);
 }
 
@@ -708,7 +697,7 @@
 .planCardFeatured .planHint,
 .planCardFeatured .planHighlight,
 .planCardFeatured .planList {
-  color: #d0ba98;
+  color: #d1dbca;
 }
 
 .planCardFeatured .heroOldPrice {
@@ -716,18 +705,18 @@
 }
 
 .planCardFeatured .heroNewPrice {
-  color: #d0ba98;
+  color: #d1dbca;
 }
 
 .planBadge {
   display: inline-block;
-  background: #91040b;
+  background: #2d5a1b;
   color: #fdecea;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  border-radius: 40px;
+  border-radius: 5px;
   padding: 5px 16px;
   align-self: flex-start;
   position: absolute;
@@ -770,7 +759,7 @@
 .planList2 li {
   font-size: 15px;
   font-weight: 400;
-  color: #d0ba98eb;
+  color: #d1dbcaeb;
   line-height: 1.5;
   padding-left: 16px;
   position: relative;
@@ -784,7 +773,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #91040b;
+  background: #2d5a1b;
 }
 
 .planList li {
@@ -804,7 +793,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #91040b;
+  background: #2d5a1b;
 }
 
 .planHint {
@@ -926,8 +915,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #23140c;
-    border-radius: 18px;
+    background: #1a2e14;
+    border-radius: 5px;
     padding: 28px 36px;
     display: flex;
     align-items: center;
@@ -1041,12 +1030,12 @@
     font-size: 24px;
 
 
-    box-shadow: 0px 0px 15px #23140C;
+    box-shadow: 0px 0px 15px #1a2e14;
     color: #f1e8db;
     border: none;
     padding: 12px 16px;
-    border-radius: 25px;
-    border: 4px solid #91040b3f;
+    border-radius: 5px;
+    border: 4px solid #2d5a1b;
   }
 
   .heroPhoto {
@@ -1073,7 +1062,7 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
     font-weight: 600;
-    color: #d0ba98;
+    color: #d1dbca;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     white-space: nowrap;

@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #d0ba986f; 
-  --foreground: #23140C;  
-  --red: #91040C;
+  --background: #fdfffb;  
+  --foreground: #080908d3;   
+  --red: #2d5a1b; 
 }
+
+
 
 body {
   background: var(--background);
